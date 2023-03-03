@@ -26,7 +26,7 @@ I split the data in the ratio of 0.15 wherein 15% of the data was used for testi
 remaining for training.
 
 ### Model Creation
-1. Conv1D layers:
+1. Conv1D layers:  
 I used 2 Conv1D layers each having 128 neurons and which were followed by
 dropout layers. The output was flattened and passed to a Dense Layer with 512
 neurons. Lastly it was passed to the output layer with 2 neurons and softmax
@@ -35,7 +35,7 @@ Results:
 The training accuracy achieved is nearly 71% and validation accuracy achieved is
 73%.
 ![image](https://user-images.githubusercontent.com/55546539/209279165-b482c0c9-8d71-4f3d-a08f-424d192bb3d8.png)
-2. LSTM Layer
+2. LSTM Layer  
 Here I used an LSTM layers with 128 neurons. and which were followed by dropout
 layers. The output was flattened and passed to a Dense Layer with 512 neurons.
 Lastly it was passed to the output layer with 2 neurons and softmax activation
@@ -46,11 +46,10 @@ The training accuracy achieved is nearly 76% and validation accuracy achieved is
 ![image](https://user-images.githubusercontent.com/55546539/209279255-a2430e74-635b-4163-af10-7d2d39edd5e2.png)
 3. LSTM and CNN Combined
 Results:
-The training accuracy achieved is nearly 79% and validation accuracy achieved is
-80%.
+The training accuracy achieved is nearly 79% and validation accuracy achieved is 80%.
 ![image](https://user-images.githubusercontent.com/55546539/209279340-03454e94-dd4c-49d0-9a61-313f2b15c011.png)
 
-### omparison of approaches:
+### Comparison of approaches:
 As it can be seen from the plot above, we get the lowest loss and highest accuracy when
 using Conv1d layers along with the LSTM layer. Thus this approach of using Conv1d along
 with LSTM is the optimal one since it gives us best results.
